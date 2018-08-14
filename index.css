@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font: normal 300 20px/1.8 "Work Sans", Helvetica, Arial, sans-serif;
+}
+.header {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.header-background {
+  background-image: url(./img/man.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position-x: 80%;
+}
+
+.header-navigation {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+}
+
+.header-navigation ul {
+  list-style: none;
+  display: flex;
+}
+.header-navigation ul li {
+  padding: 20px;
+}
+.header-navigation ul a {
+  text-decoration: none;
+  color: #999;
+  display: block;
+}
+
+.header-content {
+  position: absolute;
+  top: 200px;
+  color: white;
+}
+
+.header-title {
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-size: 96px;
+  line-height: 1.1;
+  padding: 14%;
+  /* padding-left: 14%; */
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 48px;
+  border: 2px solid;
+  position: relative;
+  line-height: 3;
+}
+
+.btn-white {
+  color: white;
+  text-decoration: none;
+}
+.header-btn {
+  position: absolute;
+  top: 550px;
+  left: 14%;
+}
+
+.about {
+  position: relative;
+  top: 85vh;
+  display: flex;
+  clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0% 100%);
+  height: 120vh;
+  background-color: white;
+  padding-top: 300px;
+}
+
+.about-heading {
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-size: 66px;
+  line-height: 1.1;
+  flex: 1;
+  padding-left: 14%;
+}
+
+.about-text {
+  padding-right: 10%;
+  flex: 1;
+}
+.light-para {
+  color: #999;
+  margin-top: 20px;
+}
+
+.btn-black {
+  color: black;
+  text-decoration: none;
+}
+
+.about-btn {
+  position: absolute;
+  top: 750px;
+  right: 640px;
+}
+
+.projects {
+  position: relative;
+  top: 65vh;
+  clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0% 100%);
+  background-color: #666;
+}
+
+.project1 {
+  display: flex;
+  padding-top: 300px;
+  position: relative;
+  height: 140vh;
+}
+
+.project-heading {
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-size: 66px;
+  line-height: 1.1;
+  flex: 1;
+  padding-left: 14%;
+  color: white;
+  margin-top: 200px;
+}
+
+.project-btn {
+  position: absolute;
+  top: 850px;
+  left: 14%;
+}
+
+.project1-img {
+  background-image: url(./img/poster-design-series.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15%;
+  width: 100%;
+}
+
+.blog-website {
+  position: relative;
+  top: 65vh;
+  display: flex;
+  height: 120vh;
+  background-color: #666;
+  padding-top: 300px;
+}
+
+.project2 {
+  display: flex;
+  padding-top: 300px;
+  position: relative;
+  height: 140vh;
+}
+.project2-img {
+  background-image: url(./img/nerddiary-blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-left: 5%; */
+  width: 100%;
+}
+
+.project3 {
+  display: flex;
+  padding-top: 300px;
+  position: relative;
+  height: 140vh;
+}
+
+.project3-img {
+  background-image: url(./img/nismo-design-concept.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-left: 15%; */
+  width: 100%;
+}
