@@ -6,43 +6,43 @@
 html {
   font: normal 300 20px/1.8 "Work Sans", Helvetica, Arial, sans-serif;
 }
+
 .header {
   background: black;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
-}
-
-.header-background {
   background-image: url(./img/man.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: contain;
   background-position-x: 80%;
 }
 
+.container {
+  max-width: 1334px;
+  margin: 0 auto;
+}
+.container-right {
+  margin-left: 14%;
+}
 .header-navigation {
-  position: absolute;
-  top: 8%;
-  right: 8%;
-}
-
-.header-navigation ul {
-  list-style: none;
   display: flex;
+  justify-content: flex-end;
+  padding: 50px 0;
 }
-.header-navigation ul li {
-  padding: 20px;
-}
-.header-navigation ul a {
+.header-navigation_links {
   text-decoration: none;
   color: #999;
   display: block;
+  padding: 0px 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-navigation_links:hover {
+  color: rgb(240, 240, 240);
 }
 
 .header-content {
-  position: absolute;
-  top: 200px;
   color: white;
 }
 
@@ -50,8 +50,7 @@ html {
   font-family: Poppins, Helvetica, Arial, sans-serif;
   font-size: 96px;
   line-height: 1.1;
-  padding: 14%;
-  /* padding-left: 14%; */
+  padding-top: 14%;
 }
 
 .btn {
@@ -67,19 +66,22 @@ html {
   text-decoration: none;
 }
 .header-btn {
-  position: absolute;
-  top: 550px;
-  left: 14%;
+  margin-top: 40px;
+}
+
+.wrapper {
+  position: relative;
+  top: 85vh;
+}
+
+.flex {
+  display: flex;
 }
 
 .about {
-  position: relative;
-  top: 85vh;
-  display: flex;
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0% 100%);
-  height: 120vh;
   background-color: white;
-  padding-top: 300px;
+  padding: 200px 0px;
 }
 
 .about-heading {
@@ -87,11 +89,9 @@ html {
   font-size: 66px;
   line-height: 1.1;
   flex: 1;
-  padding-left: 10%;
 }
 
 .about-text {
-  padding-right: 10%;
   flex: 1;
 }
 .light-para {
@@ -105,138 +105,63 @@ html {
 }
 
 .about-btn {
-  position: absolute;
-  top: 750px;
-  right: 640px;
+  padding: 50px 0;
 }
 
 .projects {
   position: relative;
-  top: 65vh;
+  top: -10vh;
   clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0% 100%);
   background-color: #666;
   padding-bottom: 400px;
 }
 
-.project1 {
-  display: flex;
+.project {
   padding-top: 300px;
-  position: relative;
-  height: 140vh;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-heading {
   font-family: Poppins, Helvetica, Arial, sans-serif;
   font-size: 66px;
   line-height: 1.1;
-  flex: 1;
-  padding-left: 10%;
+  /* padding-left: 10%; */
   color: white;
   margin-top: 200px;
 }
 
 .project-btn {
-  position: absolute;
-  top: 850px;
-  left: 10%;
+  margin-top: 64px;
+  font-size: 24px;
+  line-height: 1.1;
 }
 
-.project1-img {
-  background-image: url(./img/poster-design-series.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.project-prev {
   margin-left: 15%;
-  width: 100%;
-}
-
-.blog-website {
-  position: relative;
-  top: 65vh;
-  display: flex;
-  height: 120vh;
-  background-color: #666;
-  padding-top: 300px;
-}
-
-.project2 {
-  display: flex;
-  padding-top: 300px;
-  position: relative;
-  height: 140vh;
-}
-.project2-img {
-  background-image: url(./img/nerddiary-blog.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* margin-left: 5%; */
-  width: 100%;
-}
-
-.project3 {
-  display: flex;
-  padding-top: 300px;
-  position: relative;
-  height: 140vh;
-}
-
-.project3-img {
-  background-image: url(./img/nismo-design-concept.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 7%;
-  width: 100%;
-}
-
-.project4 {
-  display: flex;
-  padding-top: 300px;
-  position: relative;
-  height: 140vh;
-}
-
-.project4-img {
-  background-image: url(./img/pixelschupser-mediendesign-website.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 7%;
-  width: 100%;
 }
 
 footer {
-  width: 100%;
-  height: 60vh;
+  height: 83%;
   position: relative;
-  top: 35vh;
+  top: -200px;
 }
 
 .footer-img {
   background-image: url(./img/footer-background-mountain.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  /* margin-left: 7%; */
+  background-size: contain;
   width: 100%;
   height: 110vh;
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0% 100%);
 }
 
 .footer-heading {
-  position: absolute;
-  color: white;
-  top: 200px;
-}
-
-.footer-heading {
   font-family: Poppins, Helvetica, Arial, sans-serif;
   font-size: 66px;
   line-height: 1.1;
-  flex: 1;
-  padding-left: 30%;
+  padding: 200px 0 50px 0;
   color: white;
-  margin-top: 200px;
-}
-
-.footer-btn {
-  position: absolute;
-  top: 650px;
-  left: 30%;
 }
